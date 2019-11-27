@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Try and Catch | Swiftians</title>
+</head>
+<body>
+<h1>Try and Catch</h1>
+
+<p>Tags: Swift</p>
+
+<p>Type: Language Syntax</p>
+
+<p>In order to call a method that might raise an error, you will need to do the following:</p>
+<ol>
+<li>
+<p>Precede one or more trys with a do;</p>
+</li>
+<li>
+<p>Try to execute one or more method calls</p>
+</li>
+<li>
+<p>Catch any errors that might have occurred. </p>
+</li>
+</ol>
+<p>See code snippet for an example. </p>
+
+
+<p>Link: <a href="https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html">
+Swift Docs
+</a></p>
+<p>Sample Code: </p>
+<pre><code>
+do {
+	try FileManager.default.removeItem(at: newURL)
+	try FileManager.default.copyItem(at: oldURL, to: newURL)
+} catch {
+	print ("Could not Save current Collection as a new folder")
+	return false
+}
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 28 Oct 2019</p>
+</body>
+</html>

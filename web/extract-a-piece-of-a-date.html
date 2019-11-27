@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Extract a Piece of a Date | Swiftians</title>
+</head>
+<body>
+<h1>Extract a Piece of a Date</h1>
+
+<p>Tags: Foundation, date</p>
+
+<p>Type: </p>
+
+<p>Class: NSCalendar</p>
+<p>You need to pass the desired date to a Calendar instance and indicate which component you’re interested in. </p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/foundation/nscalendar">
+Apple Developer Docs
+</a></p>
+<p>Sample Code: </p>
+<pre><code>
+let now = Date()
+let gregCalendar = Calendar(identifier: .gregorian)
+let year = gregCalendar.component(.year, from: now)
+let month = gregCalendar.component(.month, from: now)
+let day = gregCalendar.component(.day, from: now)
+let dayOfWeek = gregCalendar.component(.weekday, from: now)
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 21 Oct 2019</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Make a Control the First Responder | Swiftians</title>
+</head>
+<body>
+<h1>Make a Control the First Responder</h1>
+
+<p>Tags: AppKit, responder</p>
+
+<p>Type: </p>
+
+<p>Class: NSWindow</p>
+<p>The first responder within a given window is also the responder (aka control) that has the focus for user input. In other words, it is the first control that will respond to user actions, including keyboard input.</p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/appkit/nswindow/1419366-makefirstresponder">
+Apple Developer Docs
+</a></p>
+<p>Sample Code: </p>
+<pre><code>
+// First, establish an outlet for the control
+@IBOutlet var searchField: NSSearchField!
+
+// Then request the window to make this control the first responder
+// This code would go in the window controller at the appropriate point
+guard let confirmedWindow = self.window else { return }
+confirmedWindow.makeFirstResponder(searchField)
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 21 Oct 2019</p>
+</body>
+</html>

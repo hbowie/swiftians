@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Obtain Information About a File | Swiftians</title>
+</head>
+<body>
+<h1>Obtain Information About a File</h1>
+
+<p>Tags: Foundation, file</p>
+
+<p>Type: </p>
+
+<p>Class: FileManager</p>
+<p>See Code Snippet.</p>
+<p>Also see the <a href="https://developer.apple.com/documentation/foundation/fileattributekey">Apple Developer Docs for FileAttributeKey</a>.</p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/foundation/filemanager/1410452-attributesofitem">
+Apple Developer Docs
+</a></p>
+<p>Sample Code: </p>
+<pre><code>
+let fileManager = FileManager.default
+do {
+	let attributes = try fileManager.attributesOfItem(atPath: noteURL.path)
+	let creationDate = attributes[FileAttributeKey.creationDate]
+	let lastModDate = attributes[FileAttributeKey.modificationDate]
+	print("Creation Date = \(creationDate)")
+	print("Last Mod Date = \(lastModDate)")
+}
+catch let error as NSError {
+	print("Ooops! Something went wrong: \(error)")
+}
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 21 Oct 2019</p>
+</body>
+</html>

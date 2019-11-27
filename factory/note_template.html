@@ -1,0 +1,36 @@
+<?nextrec?>
+<?output "../web/=$title&f$=.html"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>=$title$= | Swiftians</title>
+</head>
+<body>
+<h1>=$title$=</h1>
+
+<p>Tags: =$tags$=</p>
+
+<p>Type: =$type$=</p>
+
+<?if "=$EntityName$=" ?>
+<p>=$entitytype$=: =$entityname$=</p>
+<?endif?>
+=$body&o$=
+
+<?if "=$link$=" ?>
+<p>Link: <a href="=$link$=">
+=$text$=
+</a></p>
+<?endif?>
+<?if "=$code$=" ?>
+<p>Sample Code: </p>
+<pre><code>
+=$code$=
+</code></pre>
+<?endif?>
+
+<p>Contributed by =$author$= on =$date$=</p>
+</body>
+</html>
+<?loop?>

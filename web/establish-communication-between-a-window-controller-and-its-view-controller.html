@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Establish Communication between a Window Controller and its View Controller | Swiftians</title>
+</head>
+<body>
+<h1>Establish Communication between a Window Controller and its View Controller</h1>
+
+<p>Tags: AppKit, controller</p>
+
+<p>Type: </p>
+
+<p>Class: NSWindowController</p>
+<p>A View Controller doesn’t seem to have any built-in way to communicate with its window controller. </p>
+<p>On the other hand, a Window Controller can identify its Content View Controller. </p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/appkit/nswindowcontroller">
+Apple Developer Docs
+</a></p>
+<p>Sample Code: </p>
+<pre><code>
+guard let vc = customWindowController.contentViewController as? CustomViewController else { return }
+vc.window = customWindowController
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 21 Oct 2019</p>
+</body>
+</html>

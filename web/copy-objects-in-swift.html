@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Copy Objects in Swift | Swiftians</title>
+</head>
+<body>
+<h1>Copy Objects in Swift</h1>
+
+<p>Tags: Swift</p>
+
+<p>Type: API</p>
+
+<p>Protocol: NSCopying</p>
+<p>Here’s how to copy an object in Swift. </p>
+<ol>
+<li>
+<p>Have your custom class conform to the NSCopying protocol. </p>
+</li>
+<li>
+<p>Implement the ‘copy(with:)’ method in your custom class. </p>
+</li>
+<li>
+<p>Call ‘copy()’ on your object. </p>
+</li>
+</ol>
+
+
+<p>Sample Code: </p>
+<pre><code>
+// Conform to NSCopying
+class CustomClass: NSCopying {
+
+// Implement the Copy method
+func copy(with zone: NSZone? = nil) -> Any {
+    // Create your new object, copy data to it, and return it
+}
+
+// Now copy at will
+let twin = originalObject.copy() as! CustomClass
+
+</code></pre>
+
+<p>Contributed by Herb Bowie on 28 Oct 2019</p>
+</body>
+</html>
