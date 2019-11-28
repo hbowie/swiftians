@@ -6,7 +6,10 @@ sort	clear
 sort	add	ascending	Title
 sort	set		params
 template	webroot			/Users/hbowie/Sites/swiftians/web
-template	open			/Users/hbowie/Sites/swiftians/factory/index_template.html
-template	generate
 template	open			/Users/hbowie/Sites/swiftians/factory/note_template.html
+template	generate
+filter	clear
+filter	add	ne	Title	Introduction
+filter	set		params
+template	open			/Users/hbowie/Sites/swiftians/factory/index_template.html
 template	generate
