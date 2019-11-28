@@ -3,14 +3,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Swiftians</title>
+<?include "../includes/head-links.html" ?>
 </head>
 <body>
-<h1>Swiftians</h1>
-<h3>All Tips by Title</h3>
-<p><a href="tips/introduction.html">Introduction</a></p>
+	<div id="page-container">
+		<div id="header">
+			<div id="title-and-slogan">
+				<div id="site-title">
+					Swiftians
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<h3>All Tips by Title</h3>
+			<p><a href="tips/introduction.html">Introduction</a></p>
 <?nextrec?>
-<p><a href="tips/=$title&f$=.html">=$title$=</a></p>
+			<p><a href="tips/=$title&f$=.html">=$title$=</a></p>
 <?loop?>
+		</div>
+	</div>
 </body>
 </html>

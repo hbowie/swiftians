@@ -4,35 +4,50 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>=$title$= | Swiftians</title>
+<?include "../includes/head-links.html" ?>
 </head>
 <body>
-<h1>=$title$=</h1>
+	<div id="page-container">
+			<div id="header">
+			<div id="title-and-slogan">
+				<div id="site-title">
+					<a href="../index.html">Swiftians</a>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<h3>=$title$=</h3>
 
-<p>Tags: =$tags$=</p>
+			<p>Tags: =$tags$=</p>
 
-<p>Type: =$type$=</p>
+<?if "=$type$=" ?>
+			<p>Type: =$type$=</p>
+<?endif?>
 
 <?if "=$EntityName$=" ?>
-<p>=$entitytype$=: =$entityname$=</p>
+			<p>=$entitytype$=: =$entityname$=</p>
 <?endif?>
-=$body&o$=
+			=$body&o$=
 
 <?if "=$link$=" ?>
-<p>Link: <a href="=$link$=">
-=$text$=
-</a></p>
+			<p>Link: <a href="=$link$=">
+				=$text$=
+			</a></p>
 <?endif?>
 <?if "=$code$=" ?>
-<p>Sample Code: </p>
-<pre><code>
-=$code$=
-</code></pre>
+			<p>Sample Code: </p>
+			<pre><code>
+				=$code$=
+			</code></pre>
 <?endif?>
 
-<p>Contributed by =$author$= on =$date$=</p>
+			<p>Contributed by =$author$= on =$date$=</p>
 
-<p>Return to the <a href="../index.html">Home Page</a></p>
+			<p>Return to the <a href="../index.html">Home Page</a></p>
+		</div>
+	</div>
 </body>
 </html>
 <?loop?>
