@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Responder Chain | Swiftians</title>
+</head>
+<body>
+<h1>Responder Chain</h1>
+
+<p>Tags: AppKit, responder</p>
+
+<p>Type: Concept</p>
+
+<p>In macOS and Cocoa, a user action may trigger an event that will be handled by the First Responder, meaning the first Cocoa object willing and able to respond to the event, starting with the view closest to the one generating the event, proceeding upwards to higher level objects until an object steps up to the job. </p>
+<p>The responder chain proceeds in roughly the following order:</p>
+<p>View -&gt; Parent View -&gt; View Controller -&gt; Window -&gt; Window Controller -&gt; App Delegate</p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events">
+Apple Developer Docs
+</a></p>
+
+<p>Contributed by  on </p>
+
+<p>Return to the <a href="../index.html">Home Page</a></p>
+</body>
+</html>

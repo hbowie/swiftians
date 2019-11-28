@@ -1,5 +1,0 @@
-module	action	modifier	object	value
-input	open	notenik-defined		/Users/hbowie/Sites/swiftians/Swift notes
-filter	clear			
-filter	add	ne	Title	Introduction
-filter	set		params	

@@ -1,12 +1,12 @@
 module	action	modifier	object	value
 input	set		xpltags	false
 input	set		dirdepth	1
-input	open	notenik-defined		/Users/hbowie/Sites/swiftians/Swift notes
+input	open	notenik-defined		/Users/hbowie/Sites/swiftians/tips
 sort	clear
 sort	add	ascending	Title
 sort	set		params
 template	webroot			/Users/hbowie/Sites/swiftians/web
-template	open			/Users/hbowie/Sites/swiftians/factory/note_template.html
+template	open			/Users/hbowie/Sites/swiftians/factory/tip_template.html
 template	generate
 filter	clear
 filter	add	ne	Title	Introduction
