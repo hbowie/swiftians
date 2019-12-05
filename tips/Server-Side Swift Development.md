@@ -2,6 +2,9 @@ Title:  Server-Side Swift Development
 
 Tags:   server, web
 
+Index:  server-side
+Index:  Vapor
+
 Body: 
 
 Swift can run on Linux as well as macOS, and can be used to develop Web applications. 

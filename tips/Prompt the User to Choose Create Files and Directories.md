@@ -16,6 +16,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  file system
+Index:  UI open/save
+
 Body: 
 
 Use NSOpenPanel and/or NSSavePanel to query the user for file and directory names and locations. 

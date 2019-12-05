@@ -12,6 +12,14 @@ Entity Type: Class
 
 Entity Name: NSScrollView & NSTextView
 
+Date:   28 Oct 2019
+
+Author: Herb Bowie
+
+Index:  text
+Index:  scrolling
+Index:  UI views
+
 Code: 
 
 // Define the views

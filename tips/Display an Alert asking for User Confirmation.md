@@ -16,6 +16,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  alert
+Index:  user confirmation
+
 Code: 
 
 let alert = NSAlert()

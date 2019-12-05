@@ -12,6 +12,11 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  do
+Index:  try
+Index:  catch
+Index:  errors
+
 Code: 
 
 do {

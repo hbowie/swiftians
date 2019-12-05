@@ -6,6 +6,8 @@ Link:   https://medium.com/yay-its-erica/xcode-debugging-with-breakpoints-for-be
 
 Text:   Yay It's Erica on Medium
 
+Index:  breakpoint
+
 Body: 
 
 See the link for a good explanation. 

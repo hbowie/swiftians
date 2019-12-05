@@ -12,6 +12,8 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  help
+
 Body: 
 
 In order to create standard Help screens for your Mac application, you must do two things:

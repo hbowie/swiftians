@@ -16,6 +16,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  UI controls
+Index:  text
+
 Body: 
 
 The NSTextField class is used for any sort of single-line text field, including field labels. 

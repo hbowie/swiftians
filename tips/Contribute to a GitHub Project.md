@@ -12,6 +12,8 @@ Date:   26 Sep 2019
 
 Author: Herb Bowie
 
+Index:  GitHub
+
 Body: 
 
 Rob Allen's summary is helpful. 

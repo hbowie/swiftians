@@ -12,6 +12,9 @@ Date:   26 Sep 2019
 
 Author: Herb Bowie
 
+Index:  UI controls
+Index:  controls
+
 Body: 
 
 In addition to the official Apple reference, here are a couple of additiional sites with good info on most macOS controls:

@@ -16,6 +16,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  combo box
+Index:  UI controls
+
 Body: 
 
 A Combo Box combines a text entry field with a dropdown list. The user can choose an item from the list, which will then populate the text field, or the user can type a value directly into the text field. 

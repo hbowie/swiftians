@@ -1,6 +1,6 @@
 Title:  Establish Communication between a Window Controller and its View Controller
 
-Tags:   AppKit, controller
+Tags:   AppKit
 
 Link:   https://developer.apple.com/documentation/appkit/nswindowcontroller
 
@@ -13,6 +13,10 @@ Entity Name: NSWindowController
 Date:   21 Oct 2019
 
 Author: Herb Bowie
+
+Index:  window
+Index:  view
+Index:  controller
 
 Code: 
 

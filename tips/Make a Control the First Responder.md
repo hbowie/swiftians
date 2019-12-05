@@ -14,6 +14,9 @@ Date:   21 Oct 2019
 
 Author: Herb Bowie
 
+Index:  first responder
+Index:  controls
+
 Code: 
 
 // First, establish an outlet for the control

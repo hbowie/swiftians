@@ -1,6 +1,6 @@
 Title:  App and Bundle Identifiers
 
-Tags:   Apple, identifiers
+Tags:   Apple
 
 Link:   https://cocoacasts.com/what-are-app-ids-and-bundle-identifiers/
 
@@ -11,6 +11,10 @@ Type:   Concept
 Date:   26 Sep 2019
 
 Author: Herb Bowie
+
+Index: application identifier
+Index: bundle identifier
+Index: identifier
 
 Body: 
 

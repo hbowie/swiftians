@@ -4,6 +4,8 @@ Tags:   Xcode
 
 Type:   Xcode Action
 
+Index:  Xcode
+
 Body: 
 
 To stop your running project, use one of the following actions:

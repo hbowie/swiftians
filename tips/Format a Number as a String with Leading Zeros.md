@@ -14,6 +14,10 @@ Date:   21 Oct 2019
 
 Author: Herb Bowie
 
+Index:  format
+Index:  zeros, leading
+Index:  leading zeros
+
 Code: 
 
 let str = String(format: "%02d", 2)

@@ -16,6 +16,11 @@ Date:   26 Sep 2019
 
 Author: Herb Bowie
 
+Index:  user defaults
+Index:  user preferences
+Index:  preferences
+Index:  defaults
+
 Code: 
 
 // Get the User Defaults Singleton

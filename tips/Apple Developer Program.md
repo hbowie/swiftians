@@ -8,6 +8,8 @@ Text:   Apple Developer Site
 
 Type:   Auxiliary Info
 
+Index:  Apple development
+
 Body: 
 
 Developers must generally join the Apple Developer Program in order to build and sign and distribute their applications. 

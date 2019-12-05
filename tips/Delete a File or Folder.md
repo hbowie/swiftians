@@ -14,6 +14,9 @@ Date:   21 Oct 2019
 
 Author: Herb Bowie
 
+Index:  file system
+Index:  delete
+
 Code: 
 
 // Delete an item immediately

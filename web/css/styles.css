@@ -13,7 +13,7 @@ body {
   margin-right: auto; 
 }
 
-#header { 
+header { 
 	text-align: center; 
 }
 
@@ -21,6 +21,15 @@ body {
   font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #687C99;
   font-size: 3em;
+  margin-bottom: 0;
+}
+
+#site-subtitle {
+  display: inline-block;
+	font-family: 'equity_caps_aregular', Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em;
+	color: #75829C;
+	margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,10 +41,41 @@ h1 { font-size: 1.8em; margin-top: 0.3em; margin-bottom: 0.2em; }
 h2 { font-size: 1.5em; margin-top: 0.3em; margin-bottom: 0.3em; }
 h3 { font-size: 1.3em; }
 h4 { font-size: 1.2em; }
-h5 { font-size: 1.1em; margin-top: 16px; line-height: 120%; }
-h6 { font-size: 1.0em; }
+h5 { font-size: 1.1em; margin-top: 16px; line-height: 120%; margin-bottom: 0; }
+h6 { font-size: 1.0em; margin-top: 0; margin-bottom: 0; }
+
+ul { margin-top: 0.5em; margin-bottom: 1 em; }
 
 a:link 		{ color: #687C99; text-decoration: none; }
 a:visited { color: #687C99; text-decoration: none; }
 a:hover   { color: #576880; text-decoration: none; }
 a:active 	{ color: #687C99; text-decoration: none; }
+
+nav {
+	text-align: center;
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'concourse_c2bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  /* border-right: 3px solid #75829C; */
+  padding-left:  1em;
+  margin-left:   1em;
+  padding-right: 1em;
+  margin-right:  1em;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+.centered { text-align: center; }

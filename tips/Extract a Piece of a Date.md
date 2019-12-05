@@ -14,6 +14,8 @@ Date:   21 Oct 2019
 
 Author: Herb Bowie
 
+Index:  date
+
 Code: 
 
 let now = Date()

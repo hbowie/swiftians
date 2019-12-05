@@ -16,6 +16,10 @@ Date:   26 Sep 2019
 
 Author: Herb Bowie
 
+Index:  UI Controls
+Index:  text
+Index:  tokens
+
 Body: 
 
 A token field is a type of text field that includes tokens, blocks of text that can be easily selected and manipulated.

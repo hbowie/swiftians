@@ -12,6 +12,9 @@ Entity Type: Class
 
 Entity Name: NSButton
 
+Index:  checkbox
+Index:  UI controls
+
 Code: 
 
 // Define a Check Box control as a button

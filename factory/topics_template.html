@@ -1,0 +1,41 @@
+<?output "../web/topics.html"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Swiftians Topic Index</title>
+<?include "../includes/head-links.html" ?>
+</head>
+<body>
+	<div id="page-container">
+
+<?include "../includes/header.html" ?>
+
+<?include "../includes/navbar.html" ?>
+
+		<div id="content">
+			<h3>Topic Index</h3>
+
+<p>
+<?include "../includes/letters.html" ?>
+</p>
+
+<?nextrec?>
+<?definegroup 1 “=$initial-letter$="?>
+<?definegroup 2 “=$term$="?>
+<?ifendgroup 2 ?>
+</ul>
+<?ifendgroup 1 ?>
+<?ifnewgroup 1 ?>
+<h5 class="centered"><a name="letter-=$initial-letter$=">- =$initial-letter$= -</h5>
+<?ifnewgroup 2 ?>
+<h6>=$term$=</h6>
+<ul>
+<?endif?>
+			<li><a href="tips/=$page&f$=.html">=$page$=</a></li>
+<?loop?>
+		</div>
+	</div>
+</body>
+</html>

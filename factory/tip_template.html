@@ -10,17 +10,15 @@
 </head>
 <body>
 	<div id="page-container">
-			<div id="header">
-			<div id="title-and-slogan">
-				<div id="site-title">
-					<a href="../index.html">Swiftians</a>
-				</div>
-			</div>
-		</div>
+
+<?include "../includes/header.html" ?>
+
+<?include "../includes/navbar.html" ?>
+
 		<div id="content">
 			<h3>=$title$=</h3>
 
-			<p>Tags: =$tags$=</p>
+			<p><em>Tags: =$tags$=</em></p>
 
 <?if "=$type$=" ?>
 			<p>Type: =$type$=</p>
@@ -45,7 +43,6 @@
 
 			<p>Contributed by =$author$= on =$date$=</p>
 
-			<p>Return to the <a href="../index.html">Home Page</a></p>
 		</div>
 	</div>
 </body>

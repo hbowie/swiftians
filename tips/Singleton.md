@@ -6,6 +6,9 @@ Link:   https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88
 
 Text:   Anand Nimje on Medium
 
+Index:  patterns
+Index:  singleton
+
 Code: 
 
 // A class following the singleton pattern. 

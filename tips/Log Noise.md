@@ -10,7 +10,9 @@ Date:   01 Nov 2019
 
 Author: Herb Bowie
 
-Index:  log messages; 
+Index:  errors
+Index:  messages
+Index:  logs
 
 Body: 
 

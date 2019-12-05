@@ -12,6 +12,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  property
+Index:  computed property
+
 Code: 
 
 // Full Syntax for a computed property

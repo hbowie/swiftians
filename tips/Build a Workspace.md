@@ -12,6 +12,8 @@ Date:   26 Sep 2019
 
 Author: Herb Bowie
 
+Index:  workspace
+
 Body: 
 
 A workspace is a way of combining multiple projects into a single work area. This is especially useful with projects that are dependent on one another. 

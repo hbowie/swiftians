@@ -14,6 +14,10 @@ Date:   21 Oct 2019
 
 Author: Herb Bowie
 
+Index:  anchors
+Index:  views
+Index:  UI layout
+
 Code: 
 
 // We'll use a grid view as the inner view in this example

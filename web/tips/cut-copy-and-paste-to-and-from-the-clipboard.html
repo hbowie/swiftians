@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Cut, Copy and Paste to and from the Clipboard | Swiftians</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+	<link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+	<link rel="stylesheet" href="../fonts/equity_ta.css" type="text/css" />
+	<link rel="stylesheet" href="../fonts/concourse_t4.css" type="text/css" />
+	<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+
+</head>
+<body>
+<div id="page-container">
+
+	<header>
+		<p id="site-title">
+			<a href="../index.html">
+				Swiftians
+			</a>
+		</p>
+		<p id="site-subtitle">Tips for App Development using Swift</p>
+	</header>
+
+	<nav>
+		<ul>
+  		<li><a href="../index.html">Home</a></li>
+  		<li><a href="../tips/introduction.html">Intro</a></li>
+  		<li><a href="../topics.html">Index</a></li>
+		</ul>
+	</nav>
+
+<div id="content">
+<h3>Cut, Copy and Paste to and from the Clipboard</h3>
+
+<p><em>Tags: AppKit</em></p>
+
+<p>Type: API</p>
+
+<p>Class: NSPasteboard</p>
+<p>In my <a href="https://github.com/hbowie/notenik-swift">macOS Notenik app</a> I wanted to add the ability for the user to cut, copy and paste entire Notes using the traditional Edit menu commands and their usual keyboard shortcuts.</p>
+<p>Even though this seemed like a relatively simple and common thing to do, I had a rough time finding complete and current guidance on how to do this, so I thought I’d write something up to make this easier on others.</p>
+<p>(Note that this tip has nothing to do with <a href="copy-objects-in-swift.html">copying a custom object</a>, which makes use of the NSCopying protocol.)</p>
+<p>The first thing to do is to add the following code to an appropriate point in the <a href="responder-chain.html">responder chain</a>.</p>
+<pre><code>/// Copy the selected item to the system clipboard.
+@IBAction func copy(_ sender: AnyObject?) {
+    print(&quot;Copy an item&quot;)
+}
+
+/// Copy the selected item to the system clipboard and then
+/// attempt to delete the item.
+@IBAction func cut(_ sender: AnyObject?) {
+    print(&quot;Cut an item&quot;)
+}
+
+/// Paste the passed items found in the system clipboard.
+@IBAction func paste(_ sender: AnyObject?) {
+    print(&quot;Paste an item&quot;)
+} 
+</code></pre>
+<p>I added this to my NSWindowController, named ‘CollectionWindowController’.</p>
+<p>Once you add this code, then the Cut, Copy and Paste options under the Edit menu should no longer be grayed out, indicating that they are now available.</p>
+<p>The next trick here is storing and retrieving information from the system clipboard.</p>
+<p>Here’s the code to paste something to the clipboard. It makes things simpler that I’m just passing a Note as a simple String (here identified as ‘str’).</p>
+<pre><code>let board = NSPasteboard.general
+board.clearContents()
+board.setString(str, forType: NSPasteboard.PasteboardType.string)
+</code></pre>
+<p>And now here’s the code to retrieve info from the clipboard.</p>
+<pre><code>let board = NSPasteboard.general
+guard let items = board.pasteboardItems else { return }
+for item in items {
+	let str = item.string(forType: NSPasteboard.PasteboardType.string)
+	if str != nil &amp;&amp; str!.count &gt; 0 {
+			// Do something with the passed string.
+	} // End if we found a good string
+} // end for each item
+</code></pre>
+<p>Hope others find this helpful!</p>
+
+
+<p>Link: <a href="https://developer.apple.com/documentation/appkit/nspasteboard">
+Apple Developer Docs
+</a></p>
+
+<p>Contributed by Herb Bowie on 5 Dec 2019</p>
+
+</div>
+</div>
+</body>
+</html>

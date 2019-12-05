@@ -16,6 +16,9 @@ Date:   28 Oct 2019
 
 Author: Herb Bowie
 
+Index:  label
+Index:  UI controls
+
 Body: 
 
 Within Interface Builder, you can search the Object Library for 'label' and find a couple of options. If you want to build a label programmatically, though, you'll need to realize that, on macOS, Cocoa only provides you with an NSTextField, and you'll need to appropriately tweak the attributes to create something that effectively serves as a label. 

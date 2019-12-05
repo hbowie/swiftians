@@ -13,3 +13,16 @@ filter	add	ne	Title	Introduction
 filter	set		params
 template	open			/Users/hbowie/Sites/swiftians/factory/index_template.html
 template	generate
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-index		/Users/hbowie/Sites/swiftians/tips
+sort	clear
+sort	add	ascending	Initial Letter
+sort	add	ascending	Lower Case Term
+sort	add	ascending	Page
+sort	set		params
+template	webroot			/Users/hbowie/Sites/swiftians/web
+template	open			/Users/hbowie/Sites/swiftians/factory/letters_template.html
+template	generate
+template	open			/Users/hbowie/Sites/swiftians/factory/topics_template.html
+template	generate

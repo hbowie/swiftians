@@ -1,12 +1,16 @@
 Title:  A Framework is a Library packaged as a Bundle
 
-Tags:   Apple, bundle, framework, library
+Tags:   Apple
 
 Type:   Concept
 
 Date:   26 Sep 2019
 
 Author: Herb Bowie
+
+Index: framework
+Index: library
+Index: bundle
 
 Body: 
 

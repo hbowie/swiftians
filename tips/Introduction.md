@@ -14,6 +14,9 @@ Date:   27 Nov 2019
 
 Author: Herb Bowie
 
+Index: Introduction
+Index: About
+
 Code: 
 
 Body: 
@@ -40,11 +43,13 @@ Like any good adventurer exploring a new and complex territory, of course, I lef
 
 The next step was to see if there was an available domain name that I could use for the project, and it turned out that swiftians was available, in .com, .net and .org flavors. 
 
-And so that's the story of how this website came to be. I'm actually using my Notenik app to record and format the tips that appear here. All the pieces of the site, including source materials, are available on GitHub.
+And so that's the story of how this website came to be. I'm actually using my Notenik app to record and format the tips that appear here. All the pieces of the site, including source materials, are available on [GitHub](https://github.com/hbowie/swiftians).
 
 Right now this is a private one-man show, but I'm certainly open to having other contributors. 
 
 I know I'll refer back to these materials from time to time, and hope that you and others might find these at least occasionally useful as well.  
+
+And oh, by the way, my name is [Herb Bowie](https://hbowie.net).
 
 
 [ccave]: https://en.wikipedia.org/wiki/Colossal_Cave_Adventure

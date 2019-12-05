@@ -8,6 +8,9 @@ Text:   Apple Developer Docs
 
 Type:   Concept
 
+Index:  first responder
+Index:  responder chain
+
 Body: 
 
 In macOS and Cocoa, a user action may trigger an event that will be handled by the First Responder, meaning the first Cocoa object willing and able to respond to the event, starting with the view closest to the one generating the event, proceeding upwards to higher level objects until an object steps up to the job. 

@@ -12,6 +12,10 @@ Entity Name: URL
 
 Author: Herb Bowie
 
+Index:  file system
+Index:  url
+Index:  path
+
 Code: 
 
 // Let's start with a URL we got back from NSOpenPanel or something like that
