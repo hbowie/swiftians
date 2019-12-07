@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Switching from CocoaPods to Swift Package Manager | Swiftians</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+	<link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+	<link rel="stylesheet" href="../fonts/equity_ta.css" type="text/css" />
+	<link rel="stylesheet" href="../fonts/concourse_t4.css" type="text/css" />
+	<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+
+</head>
+<body>
+<div id="page-container">
+
+	<header>
+		<p id="site-title">
+			<a href="../index.html">
+				Swiftians
+			</a>
+		</p>
+		<p id="site-subtitle">Tips for App Development using Swift</p>
+	</header>
+
+	<nav>
+		<ul>
+  		<li><a href="../index.html">Home</a></li>
+  		<li><a href="../tips/introduction.html">Intro</a></li>
+  		<li><a href="../topics.html">Index</a></li>
+		</ul>
+	</nav>
+
+<div id="content">
+<h3>Switching from CocoaPods to Swift Package Manager</h3>
+
+<p><em>Tags: Xcode</em></p>
+
+<p>Type: Tool</p>
+
+<p>Tool: Package Manager</p>
+<p>My Notenik app makes use of a few third-party libraries. I had originally just downloaded the libraries I needed directly, but then started using CocoaPods. CocoaPods worked great, but then I ran across a library I wanted to try that was not set up for CocoaPods use. After some online checking, it seemed that <a href="https://swift.org/package-manager/">Swift Package Manager</a> was now far enough along that I could use it as a dependency manager for my Mac app. So I decided to rip out CocoaPods and instead try out SPM.</p><p>It turned out to be pretty easy. Here's how I did it.</p><p>Step 1 was to download and run the <a href="https://github.com/CocoaPods/cocoapods-deintegrate">cocoapods-deintegrate plugin</a>. I just followed the instructions provided in the README file.</p><p>Next thing I did was to go over the instructions for manual removal provided in this <a href="https://stackoverflow.com/questions/16427421/how-to-remove-cocoapods-from-a-project">StackOverflow discussion</a>. There were a few things left by the deintegrate plugin, so I then threw these in the trash:</p><ul><li>Podfile</li><li>Podfile.lock</li><li>The generated file with the '.xcworkspace' extension.</li></ul><p>Now I just opened my '.xcodeproj' file.</p><p>Then, looking under the Xcode File menu, I found an entry towards the bottom for Swift Packages. I picked 'Add Package Dependency...' from that submenu, and then repeated that step for each of my primary dependencies, filling in the GitHub address for each.</p><p>That was it! Couldn't have been easier!</p>
+
+<p>Link: <a href="https://swift.org/package-manager/">
+Swift Docs
+</a></p>
+
+<p>Contributed by Herb Bowie on 7 Dec 2019</p>
+
+</div>
+</div>
+</body>
+</html>

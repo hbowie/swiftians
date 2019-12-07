@@ -38,13 +38,7 @@
 
 
 <p>Class: NSFileManager</p>
-<p>You can use the NSFileManager.default singleton to delete a file or folder, but you should be aware that there are two different options here.</p>
-<ul>
-<li>Use removeItemAtURL or removeItemAtPath to delete an item immediately;</li>
-<li>Use trashItemAtURL to move an item to the trash, where the user can find and retrieve it, if necessary. (However, starting in Catalina, this seems to run into permissions problems.)</li>
-</ul>
-<p>Both will need to be wrapped in do-try-catch blocks. </p>
-
+<p>You can use the NSFileManager.default singleton to delete a file or folder, but you should be aware that there are two different options here.</p><ul><li>Use removeItemAtURL or removeItemAtPath to delete an item immediately;</li><li>Use trashItemAtURL to move an item to the trash, where the user can find and retrieve it, if necessary. (However, starting in Catalina, this seems to run into permissions problems.)</li></ul><p>Both will need to be wrapped in do-try-catch blocks.</p>
 
 <p>Link: <a href="https://developer.apple.com/documentation/foundation/nsfilemanager">
 Apple Developer Docs
